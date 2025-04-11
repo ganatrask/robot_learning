@@ -1,0 +1,26 @@
+# requirements.txt for Robot Vision Learning System
+
+# Core dependencies
+torch>=1.10.0
+torchvision>=0.11.0
+opencv-python>=4.5.0
+numpy>=1.19.0
+Pillow>=8.0.0
+matplotlib>=3.3.0
+
+# CLIP for vision-language models
+git+https://github.com/openai/CLIP.git
+
+# For object detection
+# YOLOv5 will be installed via torch.hub
+# If you want a local copy:
+# git clone https://github.com/ultralytics/yolov5.git
+
+# Additional utilities
+ftfy>=6.0.0
+regex
+tqdm
+
+# Optional: for NVIDIA GPU acceleration
+# The exact CUDA version may need to match your installed NVIDIA drivers
+# cudatoolkit
