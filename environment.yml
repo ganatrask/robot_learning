@@ -1,0 +1,22 @@
+name: robot-vision
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - numpy
+  - matplotlib
+  - pillow
+  - opencv
+  - pytorch>=1.10.0
+  - torchvision
+  - cudatoolkit=11.3  # Adjust based on your NVIDIA driver
+  - tk
+  - pip:
+    - git+https://github.com/openai/CLIP.git
+    - ftfy
+    - regex
+    - tqdm
